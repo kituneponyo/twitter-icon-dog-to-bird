@@ -1,0 +1,15 @@
+{
+  "name":"twitter_icon_modifier",
+  "description":"this add-on modify twitter icon",
+  "version":"1.0.0",
+  "manifest_version":3,
+  "permissions": ["activeTab"],
+
+  "content_scripts":[{
+    "matches":["https://twitter.com/*"],
+    "js":[
+      "twitter_icon_modifier.js"
+    ],
+    "all_frames":false
+  }]
+}
